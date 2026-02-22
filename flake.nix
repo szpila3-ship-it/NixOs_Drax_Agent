@@ -12,7 +12,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        /etc/nixos/configuration.nix
+        ./configuration.nix
         ({ config, pkgs, ... }: {
           networking.firewall.enable = false;
           services.openssh.enable = true;
